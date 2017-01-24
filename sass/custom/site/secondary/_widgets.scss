@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Widget area
+   ========================================================================== */
+
+.widget {
+	margin-top: 10px;
+
+	.widget-title,
+	.widgettitle {
+		margin-top: -10px;
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 700;
+		border-bottom: 2px solid $color__text-main;
+		padding-bottom: 5px;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			padding: 5px 0;
+
+			li {
+				margin-left: 10px;
+				padding-bottom: 0 ;
+			}
+		}
+	}
+
+	@media (max-width: $screen-md-min - 1) {
+		margin-top: 20px;
+	}
+}
+
+// Icons
+
+.widget_recent_comments,
+.widget_archive,
+.widget_categories,
+.widget_rss,
+.widget_nav_menu,
+.widget_pages,
+.widget_meta,
+.widget_recent_entries {
+
+	li:before {
+	  display: block;
+	  float: left;
+	  padding-right: 15px;
+	  font-family: 'FontAwesome';
+	}
+}
+
+.widget_recent_comments li:before { content: "\f075"; }
+.widget_archive li:before { content: "\f187"; }
+.widget_rss li:before { content: "\f09e"; }
+
+.widget_nav_menu, 
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_categories { 
+	li:before {
+		content: "\f105";
+	}
+}
+
+// Rss
+
+.widget_rss {
+	
+	li {
+	 	margin-bottom: .5em;
+	}
+
+	.rss-date, cite {
+    display: block;
+    font-style: italic;
+    font-size: .8em;
+  }
+}
+
+
+// Calendar 
+
+.widget_calendar { 
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#wp-calendar { 
+	caption { text-align: center; margin: 10px auto 15px; }
+	thead { font-size: .8em; font-family: $font__title; }
+	thead th { padding-bottom: 10px; }
+	tbody { color: $color__text-main; }
+	tbody td { text-align: center; padding: 8px; }
+	tbody .pad { background: none; }
+	tfoot #next, #prev {padding-top: 10px; font-size: 10px; text-transform: uppercase;}
+	tfoot #next { text-align: right; }
+}

@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Captions
+   ========================================================================== */
+
+.wp-caption {
+	.wp-caption-text {
+		margin: 0;
+		padding: 10px;
+		font-size: .9em;
+		font-style: italic;
+	  background: darken($color__background-body, 1.5%);
+	}
+}

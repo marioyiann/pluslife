@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Comments Section
+   ========================================================================== */
+
+.comments-area {
+	margin-top: -10px;
+	font-size: .9em;
+
+	.comments-title {
+		font-size: 1.25em;
+
+		&:before {
+			content: "\f075";
+			font-family: FontAwesome;
+			font-size: 1.1em;
+			display: inline-block;
+			opacity: .2;
+		}
+	}
+
+	@media (max-width: $screen-md-min - 1) {
+		font-size: .8em;		
+	}
+}
+
+.comment-list {
+	margin: 0 auto 20px;
+	padding: 15px;
+	border: 2px solid darken($color__background-body, 5%);
+	list-style-type: none;
+
+		padding: 0;
+		border: none;
+
+		.children {
+
+			&:before {
+				content: "\f112";
+				font-family: "FontAwesome";
+				color: $color__link;
+				display: block;
+				float: left;
+				margin-left: -30px;
+				margin-top: 25px;
+				-ms-transform: rotate(180deg);
+		    -webkit-transform: rotate(180deg);
+		    transform: rotate(180deg);
+			}
+
+			@media (max-width: $screen-md-min - 1) {
+				margin: 0 0 0 15px;
+				padding: 0;
+
+				&:before {
+					margin-top: 10px;
+					margin-left: -15px;
+				}
+			}
+		}
+
+	ol {
+		list-style-type: none;
+	}
+}
+
+.comment-meta {
+	padding: 10px;
+	font-family: $font__title;
+	
+	.edit-link {
+		padding-left: 10px;
+		
+		&:before {
+			content: "\f040";
+			font-family: FontAwesome;
+			padding-right: 5px;
+		}
+	}
+}
+
+.comment-author .avatar {
+	display: block;
+	float: left;
+	margin-right: 20px;
+
+  @media (max-width: $screen-md-min - 1) {
+		margin-right: 10px;
+  }
+}
+
+.comment-content, .reply {
+	margin-left: 80px;
+	margin-right: 15px;
+
+  @media (max-width: $screen-md-min - 1) {
+		margin-left: 70px;
+  }
+
+  ol, ul {
+		padding: 5px 0;
+  }
+}
+
+.comment-body {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+  background-color: darken($color__background-body, 5%);
+
+  @media (max-width: $screen-md-min - 1) {
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+.bypostauthor .comment-body {
+	background-color: darken($color__background-body, 10%);
+}

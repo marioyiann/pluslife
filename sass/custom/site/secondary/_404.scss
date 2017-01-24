@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Style for 404 page
+   ========================================================================== */
+
+.error-404 {
+	@extend .col-md-12;
+	
+	.page-content {
+		@extend .col-md-9;
+		padding: 0;
+	}
+
+	.search-form-404 {
+		@extend .col-md-3;
+		padding: 0;
+	}
+}
+
+.widget-404 {
+	@extend .col-md-12;
+	padding-top: 15px;
+
+	div[class^='widget'] {
+		@extend .col-md-3;
+		padding: 0; 
+	}
+}

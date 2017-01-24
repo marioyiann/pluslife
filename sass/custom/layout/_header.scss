@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Site Branding
+   ========================================================================== */
+
+.site-branding {
+	margin: 45px 0 30px;
+}
+
+.site-header {
+	text-align: center;
+
+	@media (max-width: $screen-md-min - 1) {
+		text-align: left;
+	}
+}
+
+.site-title a,
+.site-description {
+	color: $color__text-main;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.site-title  {
+	font-family: $font__main;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+.site-description {
+	margin-top: -20px;
+	font-size: .9em;
+	font-family: $font__main;
+	opacity: .5;
+	font-style: italic;
+}
+
+@media (max-width: $screen-md-min - 1) {
+	.site-branding {
+		margin: 30px auto;
+	}
+
+	.site-title  {
+	  font-size: 1.6em;
+	}
+
+	.site-description {
+		font-size: .8em;
+	}
+}
+
+/* ==========================================================================
+   Header Image
+   ========================================================================== */
+
+.header-image, .featured-image {
+	padding: 20px 0;
+}
+
+@media (max-width: $screen-md-min - 1) {
+	.header-image, .featured-image  {
+		padding: 0;
+	}
+}
+
+.featured-image {
+	text-align: center;
+}

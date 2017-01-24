@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Style buttons
+   ========================================================================== */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-color: $color__border-button;
+	border-radius: 0;
+	background: $color__background-button;
+	box-shadow: none;
+	font-family: $font__title;
+	color: $color__background-body;
+	font-size: 1.2em;
+	line-height: normal;
+	padding: 10px 20px 12px;
+	text-shadow: none;
+  @include transition-duration(.3s);
+
+	&:hover {
+		background-color: darken($color__background-button, 10%);
+		border-color: none;
+		box-shadow: none;
+	}
+
+	&:active,
+	&:focus {
+		border-color: darken($color__background-button, 10%);
+		box-shadow: none;
+	}
+}
